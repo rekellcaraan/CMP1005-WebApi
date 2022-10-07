@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Eb9Bb14jzJEunyWegxF5BncystyW7t1dkB7gM0wz32Nl8bJWLfi4l/yC/H6pZfRzZRfFP6KFzsciYUmVUMNxhA==",
+  "success": true,
+  "projectFilePath": "/Users/rekell.caraan/Documents/Cambrian/CMP1005 - Adv Web/CMP1005-WebApi/Untitled/CMP1005-A00133304-WebApi/MathOperationsWebApi/MathOperationsWebApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/rekell.caraan/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/rekell.caraan/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/rekell.caraan/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/rekell.caraan/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/rekell.caraan/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/rekell.caraan/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

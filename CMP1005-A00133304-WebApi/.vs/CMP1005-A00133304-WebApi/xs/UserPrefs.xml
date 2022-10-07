@@ -1,0 +1,5 @@
+﻿<Properties StartupConfiguration="{97173764-BBCA-4BC9-94C4-E0663225DBD5}|Default">
+  <MonoDevelop.Ide.ItemProperties.MathOperationsLibTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.MathOperationsWebApi FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>
