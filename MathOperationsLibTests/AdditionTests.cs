@@ -5,8 +5,8 @@ namespace MathOperationsLibTests;
 using MathOperationsLib;
 
 [TestClass]
-// Tests for all Math Operations
-public class MathOperationsLibTest
+// Tests for all Math Operations - Addition
+public partial class MathOperationsLibTest
 {
     [TestMethod]
     // When adding a two positive integers then the sum is a positive integer
