@@ -3,6 +3,17 @@
 public class MathOperationsLib
 {
     /// <summary>
+    /// DIVIDE: Math operations for dividing 2 decimals
+    /// </summary>
+    /// <param name="dividend">Dividend decimal</param>
+    /// <param name="divisor">Divisor decimal</param>
+    /// <returns>Quotient of 2 decimals</returns>
+    public static decimal Divide(decimal dividend, decimal divisor)
+    {
+        return dividend / divisor;
+    }
+
+    /// <summary>
     /// MULTIPLY: Math operations for multiplying 1 or more integers
     /// </summary>
     /// <param name="factors">Factors separated by comma</param>
