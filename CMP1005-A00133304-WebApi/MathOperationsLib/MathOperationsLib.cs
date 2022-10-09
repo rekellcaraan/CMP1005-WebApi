@@ -3,6 +3,20 @@
 public class MathOperationsLib
 {
     /// <summary>
+    /// MULTIPLY: Math operations for multiplying 1 or more integers
+    /// </summary>
+    /// <param name="factors">Factors separated by comma</param>
+    /// <returns>Product of integers</returns>
+    public static int Multiply(params int[] factors)
+    {
+        var product = 1;
+        foreach (int factor in factors)
+            product *= factor; // iterate on all factors and multiply
+
+        return product;
+    }
+
+    /// <summary>
     /// SUBTRACT: Math operations for subtracting 2 integers
     /// </summary>
     /// <param name="leftValue">Minuend</param>
