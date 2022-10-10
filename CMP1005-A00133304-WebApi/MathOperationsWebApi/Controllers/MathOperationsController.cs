@@ -45,6 +45,14 @@ namespace MathOperationsWebApi.Controllers
 
             return product;
         }
+
+        [HttpGet]
+        // Performs subtraction between 2 integers
+        public decimal Subtract(int minuend, int subtrahend)
+        {
+            return MathOperationsLib.MathOperationsLib.Subtract(minuend, subtrahend);
+        }
+
     }
 }
 
