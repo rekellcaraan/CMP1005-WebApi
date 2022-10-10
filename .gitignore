@@ -1,0 +1,11 @@
+**/bin/**
+**/obj/**
+**/.vs/**
+MathOperationsLibTests/obj/MathOperationsLibTests.csproj.nuget.dgspec.json
+CMP1005-A00133304-WebApi/.vs/CMP1005-A00133304-WebApi/xs/project-cache/MathOperationsLibTests-Debug.json
+*.json
+*.json
+CMP1005-A00133304-WebApi/.vs/CMP1005-A00133304-WebApi/xs/project-cache/MathOperationsLibTests-Debug.json
+CMP1005-A00133304-WebApi/.vs/CMP1005-A00133304-WebApi/xs/project-cache/MathOperationsWebApi-Debug.json
+CMP1005-A00133304-WebApi/.vs/CMP1005-A00133304-WebApi/xs/UserPrefs.xml
+CMP1005-A00133304-WebApi/.vs/**
