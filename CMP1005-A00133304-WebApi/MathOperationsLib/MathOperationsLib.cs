@@ -17,14 +17,14 @@ public class MathOperationsLib
     }
 
     /// <summary>
-    /// MULTIPLY: Math operations for multiplying 1 or more integers
+    /// MULTIPLY: Math operations for multiplying 1 or more decimal/integers
     /// </summary>
     /// <param name="factors">Factors separated by comma</param>
-    /// <returns>Product of integers</returns>
-    public static int Multiply(params int[] factors)
+    /// <returns>Product of decimal or integers</returns>
+    public static decimal Multiply(params decimal[] factors)
     {
-        var product = 1;
-        foreach (int factor in factors)
+        var product = 1m;
+        foreach (decimal factor in factors)
             product *= factor; // iterate on all factors and multiply
 
         return product;

@@ -37,9 +37,9 @@ namespace MathOperationsWebApi.Controllers
 
         [HttpGet]
         // Performs Multiplication of 2 or more factors
-        public int Multiply([FromQuery(Name = "factors[]")] int[] factors)
+        public decimal Multiply([FromQuery(Name = "factors[]")] decimal[] factors)
         {
-            var product = 0;
+            var product = 0m;
 
             product = MathOperationsLib.MathOperationsLib.Multiply(factors);
 
