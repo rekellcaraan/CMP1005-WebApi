@@ -26,4 +26,13 @@ public partial class MathOperationsLibTest
         Assert.AreEqual(expectedQuotient, actualQuotient);
         Assert.IsTrue(actualQuotient < 0);
     }
+
+    [TestMethod]
+    // When dividing any number by zero then throw an exception of DividingByZeroException
+    public void WhenDividingByZero_ThenThrowDivisionByZeroException()
+    {
+        Assert.ThrowsException<DivideByZeroException>(() => MathOperationsLib.Divide(2, 0));
+    }
+
+
 }
