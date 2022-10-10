@@ -34,6 +34,17 @@ namespace MathOperationsWebApi.Controllers
 
             return 0.0m;
         }
+
+        [HttpGet]
+        // Performs Multiplication of 2 or more factors
+        public int Multiply([FromQuery(Name = "factors[]")] int[] factors)
+        {
+            var product = 0;
+
+            product = MathOperationsLib.MathOperationsLib.Multiply(factors);
+
+            return product;
+        }
     }
 }
 
