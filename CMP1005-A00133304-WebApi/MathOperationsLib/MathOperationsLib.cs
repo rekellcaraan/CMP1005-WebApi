@@ -45,11 +45,11 @@ public class MathOperationsLib
     /// SUM: Math operations for adding 1 or more integers
     /// </summary>
     /// <param name="operands">Operands separated by comma</param>
-    /// <returns>Sum of integers</returns>
-    public static int Sum(params int[] operands)
+    /// <returns>Sum of decimals or integers</returns>
+    public static decimal Sum(params decimal[] operands)
     {
-        var sum = 0;
-        foreach (int operand in operands)
+        var sum = 0m;
+        foreach (decimal operand in operands)
             sum += operand; // iterate on all operands and sum it up
 
         return sum;

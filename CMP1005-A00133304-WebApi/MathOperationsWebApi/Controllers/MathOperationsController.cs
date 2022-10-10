@@ -14,7 +14,7 @@ namespace MathOperationsWebApi.Controllers
     {
         [HttpGet]
         // Get the sum of 2 or more addends
-        public int Sum([FromQuery(Name = "addends[]")] int[] addends)
+        public decimal Sum([FromQuery(Name = "addends[]")] decimal[] addends)
         {
             return MathOperationsLib.MathOperationsLib.Sum(addends);
         }

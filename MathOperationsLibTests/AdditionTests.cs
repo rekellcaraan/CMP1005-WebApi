@@ -64,4 +64,25 @@ public partial class MathOperationsLibTest
         Assert.IsTrue(largeInteger < smallInteger);
         Assert.IsTrue(smallInteger > 0);
     }
+
+    [TestMethod]
+    // When adding a two positive decimals then the sum is a positive decimal
+    public void WhenAdding2PositiveDecimals_ThenSumIsAPositiveDecimal()
+    {
+        var actualSum = MathOperationsLib.Sum(2.11m, 22.11m);
+        var expectedSum = 2.11m + 22.11m;
+        Assert.AreEqual(expectedSum, actualSum);
+        Assert.IsTrue(actualSum > 0);
+    }
+
+    [TestMethod]
+    // When adding multiple positive decimals then the sum is a positive decimal
+    public void WhenAddingMultiplePositiveDecimals_ThenSumIsAPositiveDecimal()
+    {
+        var actualSum = MathOperationsLib.Sum(1.2m, 2.4m, 3.77m, 4.33m, 5.0m);
+        var expectedSum = 1.2m + 2.4m + 3.77m + 4.33m + 5.0m;
+        Assert.AreEqual(expectedSum, actualSum);
+        Assert.IsTrue(actualSum > 0);
+    }
+
 }
