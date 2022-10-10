@@ -10,6 +10,9 @@ public class MathOperationsLib
     /// <returns>Quotient of 2 decimals</returns>
     public static decimal Divide(decimal dividend, decimal divisor)
     {
+        if (divisor == 0)
+            throw new DivideByZeroException(); // Throws an exception is divisor is zero (0)
+
         return dividend / divisor;
     }
 

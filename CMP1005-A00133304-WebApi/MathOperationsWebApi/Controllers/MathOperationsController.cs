@@ -18,6 +18,22 @@ namespace MathOperationsWebApi.Controllers
         {
             return MathOperationsLib.MathOperationsLib.Sum(addends);
         }
+
+        [HttpGet]
+        // Performs division between 2 decimal numbers
+        public decimal Divide(decimal dividend, decimal divisor)
+        {
+            try
+            {
+                return MathOperationsLib.MathOperationsLib.Divide(dividend, divisor);
+            }
+            catch (DivideByZeroException ex)
+            {
+                HttpContext.Response.StatusCode = 400;
+            }
+
+            return 0.0m;
+        }
     }
 }
 
