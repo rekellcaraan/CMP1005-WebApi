@@ -66,4 +66,24 @@ public partial class MathOperationsLibTest
         Assert.AreEqual(expectedProduct, actualProduct);
         Assert.IsTrue(actualProduct < 0);
     }
+
+    [TestMethod]
+    // When multiplying multiple positive decimals with odd count of negative decimals then the product is a negative decimal
+    public void WhenMultiplyingManyPositiveDecimalsAndOddCountOfNegativeDecimal_ThenProductIsANegativeDecimal()
+    {
+        var actualProduct = MathOperationsLib.Multiply(11.22m, -2.11m, 5.8m, -9.99m, -10.0m);
+        var expectedProduct = 11.22m * -2.11m * 5.8m * -9.99m * -10.0m;
+        Assert.AreEqual(expectedProduct, actualProduct);
+        Assert.IsTrue(actualProduct < 0);
+    }
+
+    [TestMethod]
+    // When multiplying multiple positive decimals with even count of negative decimals then the product is a positive decimal
+    public void WhenMultiplyingManyPositiveDecimalsAndEvenCountOfNegativeDecimal_ThenProductIsAPositiveDecimal()
+    {
+        var actualProduct = MathOperationsLib.Multiply(11.22m, -2.11m, 5.8m, 9.99m, -10.0m);
+        var expectedProduct = 11.22m * -2.11m * 5.8m * 9.99m * -10.0m;
+        Assert.AreEqual(expectedProduct, actualProduct);
+        Assert.IsTrue(actualProduct > 0);
+    }
 }
